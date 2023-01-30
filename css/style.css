@@ -10,21 +10,26 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-header {
+div {
     grid-area: titulo;
+} 
+
+header {
+    grid-area: logo;
     display: grid;
     grid-template-areas:
+        "logo"
         "titulo"
         "menu"
         "redes"
         "derechos";
 }
 
-header a {
+div a {
     text-decoration: none;
 }
 
-header a h1 {
+div a h1 {
     color: #07133F;
     margin: 0px 24px 0px 24px;
     padding: 8px;
@@ -35,7 +40,7 @@ header a h1 {
     font-size: 18px;
 }
 
-header h2 {
+div h2 {
     color: #09184E;
     margin: 8px;
     padding: 8px;
@@ -224,19 +229,25 @@ footer p {
     body {
         display: grid;
         grid-template-areas:
-            "titulo titulo titulo"
-            "menu menu menu"
-            "redes redes redes"
+            "logo titulo "
+            "menu menu "
+            "menu menu "
+            "redes redes "
         ;
         column-gap: 10px;
         row-gap: 10px;
     }
 
-    header a h1 {
-        font-size: 32px;
+    div {
+        margin: 9px;
     }
 
-    header h2 {
+    div a h1 {
+        font-size: 32px;
+        
+    }
+
+    div h2 {
         font-size: 24px;
     }
 
@@ -285,6 +296,7 @@ footer p {
     body {
         display: grid;
         grid-template-areas:
+            "logo logo logo logo"
             "titulo titulo titulo titulo"
             "menu menu menu menu"
             "redes redes redes redes"
@@ -309,7 +321,6 @@ footer p {
     }
 
     footer {
-        list-style-type: none;
         display: flex;
         flex-flow: column nowrap;
         height: 100px;
