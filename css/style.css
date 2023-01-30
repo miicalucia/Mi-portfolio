@@ -10,11 +10,18 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+header {
+    grid-area: titulo;
+    display: grid; 
+    grid-template-areas:
+    "titulo"
+    "menu"
+    "redes"
+    "derechos";
+}
 
 header a {
     text-decoration: none;
-    grid-area: titulo;
-
 }
 
 header a h1 {
@@ -34,7 +41,6 @@ header h2 {
     padding: 8px;
     text-align: center;
     font-size: 16px;
-    grid-area: subtitulo;
 }
 
 img {
@@ -42,9 +48,7 @@ img {
     height: 90px;
     border-radius: 100px;
     margin-left: 8px;
-    grid-area: logo;
     align-items: start;
-    grid-area: logo
 }
 
 nav {
@@ -190,8 +194,8 @@ footer {
     list-style-type: none;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
-    height: 100px;
+    height: 150px;
+    margin: 8px;
     grid-area: redes;
 }
 
@@ -213,10 +217,19 @@ footer {
 footer p {
     font-size: 12px;
     color: #07133F;
-    margin: 16px;  
-    grid-area: derechos;
+    margin: 8px;
 }
 
 @media (min-width:768px) {
-    
+    body {
+        display: grid;
+        grid-template-areas:
+        "titulo titulo titulo"
+        "menu menu menu"
+        "redes redes redes"
+        ;
+        column-gap: 10px;
+        row-gap: 10px;
+        
+    }
 }
