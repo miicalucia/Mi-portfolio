@@ -12,12 +12,12 @@ body {
 
 header {
     grid-area: titulo;
-    display: grid; 
+    display: grid;
     grid-template-areas:
-    "titulo"
-    "menu"
-    "redes"
-    "derechos";
+        "titulo"
+        "menu"
+        "redes"
+        "derechos";
 }
 
 header a {
@@ -224,12 +224,59 @@ footer p {
     body {
         display: grid;
         grid-template-areas:
-        "titulo titulo titulo"
-        "menu menu menu"
-        "redes redes redes"
+            "titulo titulo titulo"
+            "menu menu menu"
+            "redes redes redes"
         ;
         column-gap: 10px;
         row-gap: 10px;
-        
+    }
+
+    header a h1 {
+        font-size: 32px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 140px;
+        margin-left: 32px;
+    }
+
+    nav {
+        margin: 16px;
+    }
+
+    .menu {
+        width: 117px;
+        height: 24px;
+        padding: 80px 90px 80px 90px;
+        font-size: 20px;
+        margin: 16px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer ul {
+        display: flex;
+        flex-flow: row nowrap;
+        text-align: center;
+    }
+
+    .redes a {
+        font-size: 16px;
+    }
+
+    footer p {
+        width: 185px;
+        height: 16px;
     }
 }
