@@ -280,3 +280,38 @@ footer p {
         height: 16px;
     }
 }
+
+@media (min-width:1024px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "titulo titulo titulo titulo"
+            "menu menu menu menu"
+            "redes redes redes redes"
+        ;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto;
+        row-gap: 16px;
+        justify-items: center;
+    }
+
+    .menu {
+        width: 117px;
+        height: 24px;
+        padding: 70px 50px 70px 50px;
+        margin: 8px;
+    }
+
+    footer {
+        list-style-type: none;
+        display: flex;
+        flex-flow: column nowrap;
+        height: 100px;
+    }
+}
