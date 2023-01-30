@@ -6,49 +6,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mi - MLG</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../multimedia/logo.png">
 </head>
 
-<body>
+<body class="container-fluid">
+    <!-- NAVBAR -->
     <header>
-        <img src="../multimedia/logo.png" alt="logo">
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand navbarLogo" href="../index.html">
+                    <img src="../assets/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">¿Dónde te gustaría ir?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../html/sobre-mi.html">Sobre mí</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/portafolio.html">Portafolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- FIN NAVBAR -->
     </header>
 
-    <div>
-        <a href="../index.html">
-            <h1>Micaela Lucia Gomez</h1>
-        </a>
-        <h2>- Web Developer -</h2>
-    </div>
 
-    <nav>
-        <ul>
-            <li class="menu"><a href="sobre-mi.html">Sobre mí</a></li>
-            <li class="menu"><a href="servicios.html">Servicios</a></li>
-            <li class="menu"><a href="portafolio.html">Portafolio</a></li>
-            <li class="menu"><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+    <section id="about" class="about">
+        <div class="container">
 
+            <div class="section-title">
+                <h2>Sobre mí</h2>
+                <p>Vivo en San Carlos de Bariloche, los fin de semana disfruto conocer nuevos lugares y si el clima
+                    acompaña ir a acampar con mi familia y amigos.</p>
+            </div>
 
-    <main>
-        <h2 class="sobreMi">
-            ¿Sabías que...
-        </h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem expedita ea temporibus molestias. Laudantium
-            nemo molestiae cumque nulla id quasi quia, ipsam tenetur, dolore corporis tempora reiciendis sapiente
-            quibusdam dolorum.
-        </p>
-    </main>
+            <div class="row">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <img src="../assets/lago-gutierrez.png" class="img-fluid" alt="mi-foto">
+                </div>
+                <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                    <h3>Web Developer.</h3>
+                    <p class="fst-italic">
+                        Soy una persona que le gusta aprender cosas nuevas, me adapto con facilidad a los cambios y
+                        busco siempre el crecimiento tanto propio, como de los de mi enterno.
+                    </p>
+                    <p>
+                        Actualmente estoy en búsqueda de un trabajo que me de la posibilidad de seguir creciendo en el
+                        ámbito del desarrollo web.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <aside>
+    <!-- <aside>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/IjgPcxnxxTc"
             title="Una carrera desigual: la brecha de género en el sistema universitario de Argentina" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen>
         </iframe>
-    </aside>
+    </aside> -->
 
     <section class="sobreMi">
         <h3>Conomicimentos</h3>
@@ -57,9 +95,6 @@
         </div>
         <div class="conocimientos">
             <p>CSS3</p>
-        </div>
-        <div class="conocimientos">
-            <p>JS</p>
         </div>
         <div class="conocimientos">
             <p>Administración</p>
@@ -85,6 +120,10 @@
         </ul>
         <p>Todos los derechos reservados</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

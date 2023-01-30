@@ -48,12 +48,25 @@ div h2 {
     font-size: 16px;
 }
 
-img {
-    width: 90px;
-    height: 90px;
-    border-radius: 100px;
-    margin-left: 8px;
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-left: 0px;
     align-items: start;
+}
+
+.inicio img {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    margin-left: 16px;
+    align-items: start;
+}
+
+.about {
+    margin-top: 80px;
+    font-size: 12px;
 }
 
 nav {
