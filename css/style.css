@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     background-color: #fdfdfd;
     font-family: 'Poppins', sans-serif;
@@ -31,7 +35,7 @@ div a {
 
 div a h1 {
     color: #07133F;
-    margin: 0px 24px 0px 24px;
+    margin: 0px 24px;
     padding: 8px;
     text-decoration: none;
     text-transform: uppercase;
@@ -84,7 +88,7 @@ nav ul {
 .menu {
     width: 92px;
     height: 24px;
-    padding: 48px 16px 48px 16px;
+    padding: 48px 16px;
     margin: 8px;
     list-style-type: none;
     display: inline-block;
@@ -102,12 +106,13 @@ nav ul {
 }
 
 .sobreMi {
-    padding: 16px;
-    margin: 16px;
+    margin: 16px 4px;
+    text-align: center;
 }
 
-iframe {
-    display: inline-block;
+.sobreMi h3 {
+    font-weight: bold;
+    margin: 8px 0px;
 }
 
 .conocimientos {
@@ -116,13 +121,16 @@ iframe {
 
 .conocimientos p {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 60px;
-    height: 60px;
-    margin: 16px;
-    padding: 14px;
-    font-size: 24px;
+    width: 110px;
+    height: 100px;
+    margin: 8px;
+    padding: 4px;
+    font-size: 18px;
     border: 2px solid #99adf3;
     border-radius: 5px;
 }
