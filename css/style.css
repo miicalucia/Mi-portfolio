@@ -96,6 +96,7 @@ nav ul {
     border-radius: 10px;
     background-color: #99adf3;
     text-align: center;
+    font-size: 1.3rem;
 }
 
 .menu a {
@@ -135,21 +136,22 @@ nav ul {
     border-radius: 5px;
 }
 
-.cv {
-    width: 150px;
-    height: 50px;
-    margin: 32px;
+#cv {
+    width: 100px;
+    height: 38px;
     background-color: #fdfdfd;
     border: 2px solid #07133F;
     border-radius: 5px;
+    margin: 2rem 1rem;
 }
 
-.cv a {
+#cv a {
     text-decoration: none;
     color: #07133F;
     font-weight: bold;
     text-transform: uppercase;
 }
+
 
 .servicios {
     width: 160px;
@@ -217,11 +219,12 @@ nav ul {
 }
 
 footer {
-    list-style-type: none;
     display: flex;
     flex-flow: column nowrap;
     height: 150px;
     margin: 8px;
+    font-size: 12px; 
+    color: #07133F;
     grid-area: redes;
 }
 
@@ -230,19 +233,15 @@ footer {
 }
 
 .redes {
-    margin: 4px;
+    margin: 8px;
 }
 
 .redes a {
     text-decoration: none;
-    font-size: 12px;
     color: #07133F;
-    padding: 24px;
 }
 
 footer p {
-    font-size: 12px;
-    color: #07133F;
     margin: 8px;
 }
 
@@ -286,7 +285,7 @@ footer p {
     .menu {
         width: 117px;
         height: 24px;
-        padding: 80px 90px 80px 90px;
+        padding: 80px 90px;
         font-size: 20px;
         margin: 16px;
     }
@@ -337,7 +336,7 @@ footer p {
     .menu {
         width: 117px;
         height: 24px;
-        padding: 70px 50px 70px 50px;
+        padding: 70px 50px;
         margin: 8px;
     }
 

@@ -10,16 +10,17 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="container-fluid">
     <!-- NAVBAR -->
     <header>
-        <nav class="navbar bg-body-tertiary fixed-top">
+        <nav class="navbar bg-body-tertiary fixed-top ">
             <div class="container-fluid">
                 <a class="navbar-brand navbarLogo" href="../index.html">
-                    <img src="../assets/logo.png" alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    <img src="../assets/logo.png" class="animate__animated animate__slideInDown" alt="logo"></a>
+                <button class="navbar-toggler m-1 p-1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -52,12 +53,13 @@
     </header>
 
 
-    <section id="about" class="about">
+    <main id="about" class="about">
         <div class="container">
 
             <div class="section-title">
                 <h2>Sobre mí</h2>
-                <p>Vivo en San Carlos de Bariloche, los fin de semana disfruto conocer nuevos lugares y si el clima acompaña ir a acampar con mi familia y amigos.</p>
+                <p>Vivo en San Carlos de Bariloche, los fin de semana disfruto conocer nuevos lugares y si el clima
+                    acompaña ir a acampar con mi familia y amigos.</p>
             </div>
 
             <div class="row">
@@ -67,26 +69,22 @@
                 <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                     <h3>Web Developer.</h3>
                     <p class="fst-italic">
-                        Soy una persona que le gusta aprender cosas nuevas, me adapto con facilidad a los cambios y busco siempre el crecimiento tanto propio, como de los de mi enterno.
+                        Soy una persona que le gusta aprender cosas nuevas, me adapto con facilidad a los cambios y
+                        busco siempre el crecimiento tanto propio, como de los de mi enterno.
                     </p>
                     <p>
-                        Actualmente estoy en búsqueda de un trabajo que me de la posibilidad de seguir creciendo en el ámbito del desarrollo web.
+                        Actualmente estoy en búsqueda de un trabajo que me de la posibilidad de seguir creciendo en el
+                        ámbito del desarrollo web.
                     </p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- <aside>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/IjgPcxnxxTc"
-            title="Una carrera desigual: la brecha de género en el sistema universitario de Argentina" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-        </iframe>
-    </aside> -->
+    </main>
 
     <section class="sobreMi">
+
         <h3>Conomicimentos</h3>
+
         <div class="conocimientos">
             <p>HTML5</p>
         </div>
@@ -100,13 +98,11 @@
             <p>Bartender</p>
         </div>
 
+        <button id="cv"><a href="../assets/cv-mlg.pdf" target="_blank">Descargar CV</a></button>
     </section>
 
-    <button class="cv"><a href="../assets/cv-mlg.pdf" target="_blank">Descargar CV</a></button>
-
-
     <footer>
-        <ul class="redesSociales">
+        <ul class="redesSociales p-0">
             <li class="redes"><a
                     href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDfhSBJvdNsZVxDCxJCdBwSzdqcQMDPfhXDPPcXSncFvSZDdLlkjLqNcTKMlrPWJKJbqSF"
                     target="_blank">Gmail</a></li>
