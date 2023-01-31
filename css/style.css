@@ -9,6 +9,12 @@ html {
     font-size: 62.5%;
 }
 
+/* @media (max-width:1023px) {
+    .navbarDesktop {
+        display: none;
+    }
+} */
+
 body {
     background-color: #fdfdfd;
     font-family: 'Poppins', sans-serif;
@@ -69,7 +75,6 @@ header img {
 }
 
 .about {
-    margin-top: 80px;
     font-size: 12px;
 }
 
@@ -84,6 +89,8 @@ nav ul {
     row-gap: 16px;
     justify-items: center;
 }
+
+
 
 .menu {
     width: 92px;
@@ -338,6 +345,14 @@ footer p {
         height: 24px;
         padding: 70px 50px;
         margin: 8px;
+    }
+
+    .navbarDesktop {
+        display: show;
+    }
+
+    .navbarMobileImportant {
+        display: none;
     }
 
     footer {
