@@ -253,6 +253,12 @@ footer p {
     margin: 8px;
 }
 
+@media (max-width:1023px) {
+.navbarDesktopImportant {
+    display:none;
+}
+}
+
 @media (min-width:768px) {
     .paginaPrincipal {
         display: grid;
@@ -375,7 +381,7 @@ footer p {
 }
 
 @media (min-width:1024px) {
-    body {
+    .paginaPrincipal {
         display: grid;
         grid-template-areas:
             "logo logo logo logo"
@@ -385,6 +391,17 @@ footer p {
         ;
         column-gap: 10px;
         row-gap: 10px;
+    }
+
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "conocimientos main"
+        "conocimientos main"
+        "footer footer";
+        column-gap: 5rem;
+        row-gap: 2rem;
     }
 
     nav ul {
@@ -402,11 +419,76 @@ footer p {
         margin: 8px;
     }
 
+    .logo {
+        margin-left: 32px;
+    }
 
+    .items {
+        font-size: 12px;
+    }
+
+    .about {
+        grid-area: main;
+        margin: 100px 32px 0px 32px;
+    }
+
+    main img {
+        display: none;
+    }
+
+    .about p {
+        text-align: center;
+    }
+
+    .about .section-title {
+        margin: 9px 0px;
+    }
+    .about .row {
+        border: 2px #99adf3 dotted;
+        margin: 48px 0px;
+        padding: 16px;
+    }
+
+    .navbarMobileImportant {
+        display: none;
+    }
+
+    .navbarDesktopImportant {   
+        grid-area: header;
+        margin: 0px;
+    }
+
+    .sobreMi {
+        display: grid;
+        grid-template-areas:
+            "titulo titulo"
+            "html css"
+            "adm bart"
+            "boton boton"
+        ;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        grid-area: conocimientos;
+        margin: 90px 8px 0px 8px;
+    }
+
+    /* #cv {
+        margin: 8px;
+    } */
+
+    #cv:hover {
+        background-color: #99adf3;
+        transition: 2s;
+    }
 
     footer {
         display: flex;
         flex-flow: column nowrap;
-        height: 100px;
+        height: 80px;
+        grid-area: footer;
     }
+
+    
 }
