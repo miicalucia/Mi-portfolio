@@ -459,6 +459,8 @@ footer p {
     }
 
     .sobreMi {
+        background-color: #c4cef5;
+        border-radius: 5px;
         display: grid;
         grid-template-areas:
             "titulo titulo"
@@ -471,16 +473,25 @@ footer p {
         align-items: center;
         justify-items: center;
         grid-area: conocimientos;
-        margin: 90px 8px 0px 8px;
+        margin: 90px 8px 0px 32px;
+        padding: 8px;
+        box-shadow: 0px 3px 10px ;
+        opacity: 70%;
     }
 
-    /* #cv {
-        margin: 8px;
-    } */
+    .sobreMi div {
+        border: 2px solid #07133F;
+        border-radius: 4px;
+        background-color: #fdfdfd;
+    }
 
     #cv:hover {
-        background-color: #99adf3;
+        background-color: #07133F;
         transition: 2s;
+    }
+
+    #cv a:hover {
+        color: #fdfdfd;
     }
 
     footer {
@@ -490,5 +501,23 @@ footer p {
         grid-area: footer;
     }
 
+    @keyframes animacion {
+        0% {
+            opacity: 0%;
+        }
+
+        50% {
+            opacity: 50%;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
     
+    .animacion {
+        animation-name: animacion;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+    }
 }

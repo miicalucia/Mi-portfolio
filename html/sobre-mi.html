@@ -6,11 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mi - MLG</title>
+    <!-- BS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- LOGO -->
     <link rel="shortcut icon" href="../assets/logo.png">
+    <!-- ANIMATE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="container-fluid">
@@ -89,7 +95,7 @@
                 <div class="col-lg-6" data-aos="fade-right">
                     <img src="../assets/lago-gutierrez.png" class="img-fluid" alt="mi-foto">
                 </div>
-                <div class="col-lg-8 pt-4 pt-lg-0 content justify-content-center flex-grow-1 pe-3" data-aos="fade-left">
+                <div class="col-lg-8 pt-4 pt-lg-0 content justify-content-center flex-grow-1 pe-3" >
                     <h3>Web Developer.</h3>
                     <p class="fst-italic">
                         Soy una persona que le gusta aprender cosas nuevas, me adapto con facilidad a los cambios y
@@ -104,7 +110,7 @@
         </div>
     </main>
 
-    <section class="sobreMi">
+    <section class="sobreMi animacion" data-aos="zoom-in-up">
 
         <h3>Conomicimentos</h3>
 
@@ -137,9 +143,15 @@
         <p>Todos los derechos reservados</p>
     </footer>
 
+    <!-- SCRIPT BS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <!-- SCRIPT AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
