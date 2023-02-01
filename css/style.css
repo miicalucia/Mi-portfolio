@@ -192,38 +192,44 @@ nav ul {
     color: #fdfdfd;
 }
 
-#datos {
-    background-color: #fdfdfd;
-    color: #09184E;
-    width: 160px;
-    height: 32px;
-    padding: 2px 2px 2px 8px;
-    border: #99adf3 2px inset;
-    border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
+.formulario {
+    margin-top: 80px;
 }
 
-#consulta {
-    background-color: #fdfdfd;
-    color: #99adf3;
-    width: 320px;
-    height: 320px;
-    padding: 2px 2px 2px 8px;
-    border: #99adf3 2px inset;
-    border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
+.formulario h2 {
+    text-align: center;
+    margin: 16px;
+}
+
+.novedades {
+    display: flex;
+    align-items: center;
+}
+
+.novedades input {
+    margin: 4px;
+}
+
+.novedades label {
+    margin: 4px;
 }
 
 .botonesFormulario {
-    width: 120px;
-    height: 50px;
-    margin: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.opcionesFormulario {
+    width: 80px;
+    height: 30px;
+    margin: 8px;
     background-color: #fdfdfd;
-    border: #07133F 2px solid;
-    border-radius: 5px;
+    border: #99adf3 1px solid;
+    border-radius: 6px;
     color: #07133F;
-    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 footer {
@@ -270,6 +276,10 @@ footer p {
         ;
         column-gap: 10px;
         row-gap: 10px;
+    }
+
+    .navbarMobileImportant {
+        margin: 0px;
     }
 
     div {
@@ -518,6 +528,6 @@ footer p {
     .animacion {
         animation-name: animacion;
         animation-timing-function: ease-in;
-        animation-duration: 2s;
+        animation-duration: 3s;
     }
 }
