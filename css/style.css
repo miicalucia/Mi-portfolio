@@ -54,7 +54,6 @@ div h2 {
     font-size: 16px;
 }
 
-
 header img {
     width: 50px;
     height: 50px;
@@ -110,7 +109,6 @@ footer {
     margin: 8px;
     font-size: 12px;
     color: #07133F;
-    grid-area: redes;
 }
 
 .redesSociales {
@@ -248,7 +246,6 @@ footer p {
     padding: 0px;
 }
 
-/* NUEVA SECCION */
 .socialMedia {
     display: flex;
     flex-flow: column nowrap;
@@ -316,7 +313,6 @@ footer p {
 
     .navbarMobileImportant {
         margin: 0px;
-        grid-area: navegacionMobile;
     }
 
     div {
@@ -443,7 +439,7 @@ footer p {
 
     .socialMedia {
         grid-area: social;
-    }    
+    }
 }
 
 @media (min-width:1024px) {
@@ -462,18 +458,26 @@ footer p {
         row-gap: 10px;
     }
 
+    .derechos {
+        display: flex;
+        flex-flow: column nowrap;
+        grid-area: footer;
+    }
+
+    .footerSobreMi {
+        grid-area: pieDePagina;
+    }
+
     .bodySobreMi {
         display: grid;
         grid-template-areas:
             "header header"
             "conocimientos main"
             "conocimientos main"
-            "footer footer";
+            "pieDePagina pieDePagina";
         column-gap: 5rem;
-        row-gap: 2rem;
+        row-gap: 3rem;
     }
-    
-
 
     nav ul {
         display: grid;
@@ -513,11 +517,6 @@ footer p {
         margin: 0px;
     }
 
-    .derechos {
-        display: flex;
-        flex-flow: column nowrap;
-        grid-area: footer;
-    }
 
     /* SOBRE MI */
 
@@ -674,8 +673,8 @@ footer p {
         margin-right: 8px;
     }
 
-    .redes a:hover{
-        color:#07133F;
+    .redes a:hover {
+        color: #07133F;
         transition: 0.7s;
     }
 
