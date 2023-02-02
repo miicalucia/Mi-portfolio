@@ -136,14 +136,70 @@ footer p {
 
 /* SOBRE MI */
 
-.sobreMi {
-    margin: 16px 4px;
+.about {
+    font-size: 12px;
     text-align: center;
+    margin-top: 80px;
+}
+
+.about img {
+    width: 200px;
+    height: 174px;
 }
 
 .sobreMi h3 {
     font-weight: bold;
     margin: 8px 0px;
+    grid-area: titulo;   
+}
+
+.conocimientos1 {
+    grid-area: html;
+}
+
+.conocimientos2 {
+    grid-area: css;
+}
+
+.conocimientos3 {
+    grid-area: adm;
+}
+
+.conocimientos4 {
+    grid-area: bart;
+}
+
+#cv {
+    width: 100px;
+    height: 38px;
+    background-color: #fdfdfd;
+    border: 2px solid #07133F;
+    border-radius: 5px;
+    margin: 2rem 1rem;
+    grid-area: boton;
+}
+
+#cv a {
+    text-decoration: none;
+    color: #07133F;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sobreMi {
+    margin: 16px 4px;
+    text-align: center;
+    display: grid;
+        grid-template-areas:
+            "titulo titulo"
+            "html css"
+            "adm bart"
+            "boton boton"
+        ;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
 }
 
 .sobreMi div {
@@ -164,33 +220,6 @@ footer p {
     font-size: 18px;
     border: 2px solid #99adf3;
     border-radius: 5px;
-}
-
-#cv {
-    width: 100px;
-    height: 38px;
-    background-color: #fdfdfd;
-    border: 2px solid #07133F;
-    border-radius: 5px;
-    margin: 2rem 1rem;
-}
-
-#cv a {
-    text-decoration: none;
-    color: #07133F;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.about {
-    font-size: 12px;
-    text-align: center;
-    margin-top: 80px;
-}
-
-.about img {
-    width: 200px;
-    height: 174px;
 }
 
 /* CONTACTO */
@@ -365,7 +394,6 @@ footer p {
     .sobreMi h3 {
         font-size: 2rem;
         margin: 16px 0px;
-        grid-area: titulo;
     }
 
     .conocimientos1 .conocimientos2 .conocimientos3 .conocimientos4 {
@@ -374,22 +402,6 @@ footer p {
         margin: 8px;
         padding: 4px;
         font-size: 22px;
-    }
-
-    .conocimientos1 {
-        grid-area: html;
-    }
-
-    .conocimientos2 {
-        grid-area: css;
-    }
-
-    .conocimientos3 {
-        grid-area: adm;
-    }
-
-    .conocimientos4 {
-        grid-area: bart;
     }
 
     .about {
@@ -407,7 +419,6 @@ footer p {
         height: 46px;
         margin: 2rem 1rem;
         font-size: 1.4rem;
-        grid-area: boton;
     }
 
     .sobreMi {
