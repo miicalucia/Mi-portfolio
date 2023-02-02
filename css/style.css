@@ -118,12 +118,16 @@ footer {
 }
 
 .redes {
-    margin: 8px;
+    margin: 6px;
 }
 
 .redes a {
     text-decoration: none;
     color: #07133F;
+}
+
+.redes a i {
+    margin-right: 3px;
 }
 
 footer p {
@@ -474,7 +478,8 @@ footer p {
     }
 
     .items {
-        font-size: 12px;
+        font-size: 14px;
+        margin-left: 8px;
     }
 
     .navbarMobileImportant {
@@ -483,6 +488,7 @@ footer p {
 
     .navbarDesktopImportant {
         grid-area: header;
+        margin: 0px;
     }
 
     footer {
@@ -588,7 +594,7 @@ footer p {
     .formulario div {
         font-size: 2rem;
     }
-    
+
     .formulario div input {
         font-size: 1.5rem;
     }
@@ -602,10 +608,56 @@ footer p {
         row-gap: 2rem;
     }
 
+    .footerPrueba {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        background-color: #99adf3;
+        box-shadow: 5px 3px 10px;
+        opacity: 90%;
+        margin-right: 32px;
+        width: 300px;
+        height: 500px;
+    }
+
     .footerContacto {
-        margin-top: 130px;
+        margin-top: 200px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .footerContacto .redes a {
+        font-size: 16px;
+        color: #fdfdfd;
+        font-weight: bold;
+    }
+
+    .opcionesFormulario {
+        width: 100px;
+        height: 50px;
+        font-size: 12px;
+    }
+
+    .opcionesFormulario:hover {
+        background-color: #07133F;
+        transition: 1s;
+        color: #fdfdfd;
+    }
+
+    .redes a i {
+        margin-right: 8px;
+    }
+
+    .redes a:hover{
+        color:#07133F;
+        transition: 0.7s;
+    }
+
+    .derechos p {
+        margin-top: 300px;
+        font-size: 10px;
+    }
+
 }

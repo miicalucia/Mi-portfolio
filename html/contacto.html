@@ -9,12 +9,16 @@
     <!-- BS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- BS ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- LOGO -->
     <link rel="shortcut icon" href="../assets/logo.png">
     <!-- ANIMATE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="container-fluid bodyContacto">
@@ -56,7 +60,8 @@
         <!-- FIN NAVBAR MOBILE -->
 
         <!-- NAVBAR DESKTOP -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbarDesktopImportant">
+        <nav
+            class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm p-3 mb-5 bg-body-tertiary rounded navbarDesktopImportant">
             <div class="container-fluid">
                 <a class="navbar-brand logo" href="../index.html"><img src="../assets/logo.png"
                         class="animate__animated animate__slideInDown" alt="logo"></a>
@@ -92,7 +97,7 @@
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Deje su consulta</label>
-            <textarea class="form-control" id="datos" rows="3"></textarea>
+            <textarea class="form-control" id="datos" cols="30" rows="10"></textarea>
         </div>
         <div class="novedades">
             <input type="checkbox" name="novedades" placeholder="check">
@@ -104,24 +109,32 @@
         </div>
     </form>
 
-    <footer>
+    <footer class="footerPrueba">
         <hr>
         <ul class="footerContacto">
-            <li class="redes"><a
-                    href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDfhSBJvdNsZVxDCxJCdBwSzdqcQMDPfhXDPPcXSncFvSZDdLlkjLqNcTKMlrPWJKJbqSF"
-                    target="_blank">Gmail</a></li>
-            <li class="redes"><a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a></li>
-            <li class="redes"><a href="https://github.com/miicalucia?tab=projects" target="_blank">GitHub</a></li>
+            <li class="redes">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDfhSBJvdNsZVxDCxJCdBwSzdqcQMDPfhXDPPcXSncFvSZDdLlkjLqNcTKMlrPWJKJbqSF"
+                    target="_blank"><i class="bi bi-google"></i>Gmail</a>
+            </li>
+            <li class="redes"><a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i>WhatsApp</a></li>
+            <li class="redes"><a href="https://github.com/miicalucia?tab=projects" target="_blank"><i class="bi bi-github"></i>GitHub</a></li>
             <li class="redes"><a href="https://www.linkedin.com/in/micaela-lucia-gomez-800781b8/"
-                    target="_blank">LinkedIn</a></li>
+                    target="_blank"><i class="bi bi-linkedin"></i>LinkedIn</a></li>
         </ul>
-        <p>Todos los derechos reservados</p>
+        <div class="derechos">
+            <p>Todos los derechos reservados</p>
+        </div>
     </footer>
 
     <!-- SCRIPT BS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <!-- SCRIPT AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
