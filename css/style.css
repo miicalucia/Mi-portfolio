@@ -238,7 +238,7 @@ footer p {
     font-weight: bold;
 }
 
-.footerContacto {
+.redesContacto {
     display: flex;
     flex-flow: row nowrap;
     text-align: center;
@@ -246,6 +246,16 @@ footer p {
     list-style-type: none;
     font-size: 10px;
     padding: 0px;
+}
+
+/* NUEVA SECCION */
+.socialMedia {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 8px;
+    font-size: 12px;
+    color: #07133F;
+    grid-area: redes;
 }
 
 /* SERVICIOS */
@@ -306,6 +316,7 @@ footer p {
 
     .navbarMobileImportant {
         margin: 0px;
+        grid-area: navegacionMobile;
     }
 
     div {
@@ -429,6 +440,10 @@ footer p {
     .formulario h2 {
         margin-bottom: 32px;
     }
+
+    .socialMedia {
+        grid-area: social;
+    }    
 }
 
 @media (min-width:1024px) {
@@ -457,6 +472,8 @@ footer p {
         column-gap: 5rem;
         row-gap: 2rem;
     }
+    
+
 
     nav ul {
         display: grid;
@@ -491,7 +508,7 @@ footer p {
         margin: 0px;
     }
 
-    footer {
+    .derechos {
         display: flex;
         flex-flow: column nowrap;
         grid-area: footer;
@@ -603,12 +620,13 @@ footer p {
         display: grid;
         grid-template-areas:
             "header header"
-            "formulario footer"
-            "formulario footer";
+            "formulario social"
+            "formulario social"
+            "footer footer";
         row-gap: 2rem;
     }
 
-    .footerPrueba {
+    .socialMedia {
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
@@ -619,16 +637,17 @@ footer p {
         margin-right: 32px;
         width: 300px;
         height: 500px;
+        grid-area: social;
     }
 
-    .footerContacto {
+    .redesContacto {
         margin-top: 200px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .footerContacto .redes a {
+    .redesContacto .redes a {
         font-size: 16px;
         color: #fdfdfd;
         font-weight: bold;
@@ -656,7 +675,7 @@ footer p {
     }
 
     .derechos p {
-        margin-top: 300px;
+        margin-top: 150px;
         font-size: 10px;
     }
 
